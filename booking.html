@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>सेवा बुकिंग</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h2>माऊली CSC सेवा केंद्र</h2>
+<nav>
+<a href="index.html">मुख्यपृष्ठ</a>
+<a href="services.html">आमच्या सेवा</a>
+<a href="about.html">आमच्याबद्दल</a>
+<a href="booking.html">बुकिंग</a>
+<a href="contact.html">संपर्क</a>
+</nav>
+</header>
+
+<section class="page">
+<h1>सेवा बुकिंग</h1>
+<div class="card">
+<form id="bookingForm">
+<label>तुमचे नाव</label>
+<input id="name" required placeholder="तुमचे पूर्ण नाव">
+
+<label>मोबाइल नंबर</label>
+<input id="phone" required pattern="[0-9]{10}" maxlength="10" placeholder="१० अंकी नंबर">
+
+<label>सेवा निवडा</label>
+<select id="service" required>
+<option value="">सेवा निवडा</option>
+<option>झेरॉक्स व प्रिंटआउट</option>
+<option>मोबाइल रिचार्ज</option>
+<option>ऑनलाइन फॉर्म</option>
+<option>सरकारी योजनांची माहिती</option>
+<option>इतर सेवा</option>
+</select>
+
+<label>अधिक माहिती</label>
+<textarea id="details" placeholder="तुमची विनंती"></textarea>
+
+<button class="btn" type="submit">WhatsApp वर पाठवा</button>
+</form>
+<p id="status"></p>
+</div>
+
+<a class="btn" href="about.html">मागील पेज</a>
+<a class="btn" href="contact.html">पुढील पेज</a>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

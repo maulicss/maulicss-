@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    background: white;
+    color: #9b1235;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    color: #9b1235;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+.hero, .page {
+    min-height: 90vh;
+    padding: 60px 20px;
+    background:
+    linear-gradient(#0009, #700b2dcc),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.content {
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #ffe39a;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffe39a;
+    color: #65132b;
+    padding: 12px 18px;
+    margin: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card {
+    background: white;
+    color: #65132b;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        padding: 7px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+}
